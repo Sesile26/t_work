@@ -1,0 +1,180 @@
+/*
+Theme Name: Twenty Twenty-One Child
+Theme URI: https://wordpress.org/themes/twentytwentyone/
+Template: twentytwentyone
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
+Tags: one-column,accessibility-ready,custom-colors,custom-menu,custom-logo,editor-style,featured-images,footer-widgets,block-patterns,rtl-language-support,sticky-post,threaded-comments,translation-ready
+Version: 1.2.1632281612
+Updated: 2021-09-22 06:33:32
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+#myContainer {
+    font-family: 'Inter', sans-serif;
+    /* width: 770px; */
+    max-width: 770px;
+    min-height: 470px;
+    background-color : #E5E5E5;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+}
+.content {
+    padding: 43px 80px;
+}
+/* container */
+
+/* navigation */
+#myTab {
+    width: 520px;
+    height: 44px;
+    position: relative;
+    right: 9px;
+}
+.iconHome {
+    border-radius: 6px 0 0 6px;
+    background-color: white;
+    padding: 10px 10px 10px 18px;
+}
+.iconHome i {
+    color: #9CA3AF;
+}
+.left {
+    position: absolute;
+}
+.right {
+    position: relative;
+    left: 9px;
+}
+.nav-item {
+    position: relative;
+    left: 9px;
+}
+.nav-item div {
+    display: inline-block;
+}
+.nav-item .nav-link {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#info-tab,#quantity-tab,#price-tab,#done-tab {
+    border:none;
+    border-radius: 0;
+    height: 44px;
+    background-color: white;
+    padding: 10px 22px 10px 0;
+}
+#done-tab {
+    border-radius: 0 6px 6px 0;
+}
+#myContainer .buttons {
+    padding: 0;
+    position: absolute;
+    bottom: 44px;
+}
+#myContainer .buttons button{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+#myContainer .buttons .button-back{
+    background-color: #F4F4F4;
+    border-color: #F4F4F4;
+    color:#0d6efd;
+    margin: 0 16px;
+}
+/* navigation */
+
+/* content */
+#myContainer h1 {
+    margin: 29px 0 0 0;
+    font-weight: bold;
+    font-size: 44px;
+}
+#myContainer .h1-margin {
+    margin: 29px 0;
+}
+#myContainer .form-label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+#myContainer .form-field {
+    display: inline-block;
+    width: 380px;
+}
+#myContainer .form-field input{
+    border: none;
+}
+.input370 {
+    width: 370px;
+    height: 44px;
+}
+.btn {
+    height: 44px;
+    padding: 6px 15px;
+}
+#myContainer #donePrice {
+    margin: 0;
+    font-size: 150px;
+}
+/* content */
+
+@media all and (max-width: 770px) {
+    .myContainer {
+        width: 100%;
+        /* max-width: 770px; */
+    }
+    .content {
+        padding: 43px 40px;
+    }
+}
+@media all and (max-width: 620px) {
+    .content {
+        padding: 43px 12px 88px 12px;
+    }
+    .form-label {
+        width: 100%;
+        text-align: left;
+    }
+    .myContainer {
+        height: 100%;
+    }
+    #myContainer .form-field {
+        width: 350px;
+    }
+}
+@media all and (max-width: 520px) {
+    .content {
+        padding: 43px 12px 88px 12px;
+    }
+    #myContainer .form-label {
+        width: 100%;
+        text-align: center;
+    }
+    .row {
+        justify-content: space-around;
+    }
+    #myContainer h1 {
+        text-align:center;
+    }
+    .mobVer {
+        display:none;
+    }
+    #myTab {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #info-tab, #quantity-tab, #price-tab, #done-tab {
+        padding: 10px;
+        margin: 0px 10px 10px 10px;
+        border-radius: 5px;
+    }
+    #myContainer #donePrice {
+        font-size:75px;
+    }
+}
